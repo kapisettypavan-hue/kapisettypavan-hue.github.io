@@ -85,6 +85,15 @@
     <footer>
         <p>© 2026 Pavan Builds. All rights reserved.</p>
     </footer>
+    <button id="theme-toggle">🌙</button>
+
+<script>
+  const toggle = document.getElementById("theme-toggle");
+  toggle.onclick = () => {
+    document.body.classList.toggle("dark");
+    toggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+  };
+</script>
 
 </body>
 </html>
